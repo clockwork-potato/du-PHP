@@ -34,6 +34,18 @@ function testM( $nbr1, $nbr2, $nbr3){
 };
 testM(10, 15, 150);
 
+?>
+
+
+
+<?php
+
+// faire un array
+
+$tab = [];
+// ou
+$tabb = array();
+
 
 
 ?>
