@@ -58,14 +58,27 @@ echo '<br>';
 echo '<br>';
 echo '<br>';
 
+          //!       clé          valeur
 foreach($maTab as $maKey => $nomDeVarKonVeuKek){
     echo $maKey.  ' => '  .$nomDeVarKonVeuKek.'<br>';
 };
 
 
 
+echo '<br>';
+echo '<br>';
+echo '<h1> Exo 1</h1>';
+echo '<br>';
+echo '<br>';
 
+$tabExo = [12, 25, 85, 74, 69, 32, 54, 1, 3];
 
+echo '<br>';
 
+echo max($tabExo).'<br>';
+echo min($tabExo).'<br>';
+echo '<br>';
+
+echo '<h1> Exo 2</h1>';
 
 ?>
