@@ -7,3 +7,15 @@
     echo $nbr2."<br>";
     echo $nbr2 + $nbr1;
 ?>
+<?php 
+
+
+
+
+
+
+
+
+
+
+?>
