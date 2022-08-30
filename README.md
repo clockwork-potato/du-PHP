@@ -1,7 +1,7 @@
 <h1 align="center">Youhou 👋, c'est du PHP</h1>
 <h3 align="center">Un étudiant de l'ADRAR</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=emestay" alt="emestay" /></a> </p>
+
 
 - ⚡ Fun fact **Je découvre PHP**
 
