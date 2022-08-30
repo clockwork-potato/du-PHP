@@ -41,10 +41,30 @@ testM(10, 15, 150);
 <?php
 
 // faire un array
-
 $tab = [];
 // ou
 $tabb = array();
+
+//---------------------------------------------------------------------//
+
+$maTab = ['nom' => 'Bdrx' ,'prenom' => 'Flo', 'age' => 21];
+
+echo $maTab['nom'].'<br>';
+$maTab['tel'] = '060504030201';
+echo $maTab['tel'].'<br>';
+//!----------------------------------//! 
+var_dump($maTab);   //!------------> ON PEUT VOIR LE TABLAL ENTIER  VAR DUMP --------------------//!
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+foreach($maTab as $maKey => $nomDeVarKonVeuKek){
+    echo $maKey.  ' => '  .$nomDeVarKonVeuKek.'<br>';
+};
+
+
+
+
 
 
 
