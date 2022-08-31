@@ -23,7 +23,7 @@ $tva = $_POST['TVA'];
 
 
     $total = ($ht * ($tva / 100))*$nbr ;
-    echo 'le prix est éfal a :'.$total.'€.';
+    echo 'le prix est égal a :'.$total.'€.';
 
 
 
