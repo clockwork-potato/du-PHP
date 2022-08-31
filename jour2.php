@@ -8,6 +8,12 @@ echo '<br>';
 echo '<br>';
 
 
+function moyenne($tablo){
+    $moyenne = array_sum($tablo)/count($tablo);
+    echo $moyenne;
+}
 
+$lulu = [10, 25, 89, 65, 84, 64, 87, 45, 69];
+moyenne($lulu);
 
 ?>
