@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../asset/style/style.css">
     <script src="../asset/script/script.js"></script>
     <title><?php echo $namepage ?></title>
+    <p>le header est la</p>
 </head>
 <body>
     
