@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asset/style/style.css">
     <script src="../asset/script/script.js"></script>
-    <title><?php echo $namepage ?></title>
+    <title>
+        <?php  $titrePage = $_SERVER['PHP_SELF'];
+        echo substr($titrePage, 9, -4);
+        
+        ?>
+</title>
     <p>le header est la</p>
 </head>
 <body>
