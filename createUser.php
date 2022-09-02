@@ -7,6 +7,8 @@ include './view/view_header.php';
 include './view/view_navbar.php';
 include './view/view_create_user.php';
 
+//! NON securisé !!!!!!!!! A NE JAMAIS UTILISER !!!!!!!!!
+//! NON securisé !!!!!!!!! A NE JAMAIS UTILISER !!!!!!!!!
 
 if(isset($_POST['submit'])){
     if(!empty($_POST['nom_util']) AND !empty($_POST['prenom_util']) AND !empty($_POST['mail_util']) AND !empty($_POST['password_util']));
@@ -26,8 +28,8 @@ else{
 
 echo $message;
 
-
-
+//! NON securisé !!!!!!!!! A NE JAMAIS UTILISER !!!!!!!!!
+//! NON securisé !!!!!!!!! A NE JAMAIS UTILISER !!!!!!!!!
 
 include './view/view_footer.php';
 
