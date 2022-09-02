@@ -69,5 +69,8 @@ function createUserV2($bdd, $nom, $prenom, $mail, $password){
     };
 
 
+    
+
+
 
 ?>
