@@ -70,7 +70,26 @@ function createUserV2($bdd, $nom, $prenom, $mail, $password){
 
 
     
-
+    function showUserByMail($bdd, $mail):?array{
+        try {
+            //stocker et évaluer la requête
+            $req = $bdd->prepare("SELECT id_util, nom_util, prenom_util,
+            mail_util, password_util FROM utilisateur WHERE mail_util = ?");
+            //binder la valeur $mail au ?
+            $req->bindParam(1, $mail, PDO::PARAM_STR);
+            //exécuter la requête
+            $req->execute();
+            //stocker dans $data le résultat de la requête (tableau associatif)
+            $data = $req->fetchAll(PDO::FETCH_ASSOC);
+            //retourner le tableau associatif
+            return $data;
+        } 
+        catch (Exception $e) 
+        {
+            //affichage d'une exception en cas d’erreur
+            die('Erreur : '.$e->getMessage());
+        }
+    }
 
 
 ?>
