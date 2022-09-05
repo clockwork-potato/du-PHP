@@ -1,7 +1,7 @@
 <?php
 
 include './utils/dbConnect.php';
-
+include './utils/functions.php';
 include './model/utilisateur.php';
 include './view/view_header.php';
 include './view/view_navbar.php';
@@ -12,14 +12,15 @@ include './view/view_create_user.php';
 
 if(isset($_POST['submit'])){
     if(!empty($_POST['nom_util']) AND !empty($_POST['prenom_util']) AND !empty($_POST['mail_util']) AND !empty($_POST['password_util']));
-    $nom = ($_POST['nom_util']);
-    $prenom = ($_POST['prenom_util']);
-    $mail = ($_POST['mail_util']);
+    $nom = cleanInput($_POST['nom_util']);
+    $prenom = cleanInput($_POST['prenom_util']);
+    $mail = cleanInput($_POST['mail_util']);
     $password = md5($_POST['password_util']);
     createUserV3($bdd, $nom, $prenom, $mail, $password);
     $message = "couuou je suis $nom et ça $mail c'est mon mail et je suis dans la DB";
 
-
+//    $password = password_hash($_POST['password_util'], PASSWORD_DEFAULT);
+// $password = password_hash(cleanInput($_POST['password_util']), PASSWORD_DEFAULT);
 
 }
 else{
