@@ -15,8 +15,8 @@ if(isset($_POST['submit'])){
     $nom = ($_POST['nom_util']);
     $prenom = ($_POST['prenom_util']);
     $mail = ($_POST['mail_util']);
-    $password = ($_POST['password_util']);
-    createUser($bdd, $nom, $prenom, $mail, $password);
+    $password = md5($_POST['password_util']);
+    createUserV3($bdd, $nom, $prenom, $mail, $password);
     $message = "couuou je suis $nom et ça $mail c'est mon mail et je suis dans la DB";
 
 

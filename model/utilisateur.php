@@ -53,8 +53,8 @@ function createUserV2($bdd, $nom, $prenom, $mail, $password){
 
     function createUserV3($bdd, $nom, $prenom, $mail, $password){
         try {
-            $req = $bdd->query("INSERT INTO utilisateur(nom_util, prenom_util, mail_util, 
-            password_util)VALUES( ?, ?, ?, ?)");
+            $req = $bdd->prepare("INSERT INTO utilisateur(nom_util, prenom_util, mail_util, 
+            password_util)VALUES(?,?,?,?)");
 
             $req->bindParam(1, $nom, PDO::PARAM_STR);
             $req->bindParam(2, $prenom, PDO::PARAM_STR);
